@@ -17,6 +17,7 @@ async function page(path, title, description, content, id = "", index = true) {
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)} · Cuenta Clara</title><meta name="description" content="${esc(description)}">
 ${index ? `<link rel="canonical" href="${esc(canonical)}">` : '<meta name="robots" content="noindex">'}
+${path === "/" ? '<meta name="google-site-verification" content="SZGJCAaREGKhoSxTgrZL-Dch8cmgte_31dIS84pl0WQ">' : ""}
 <meta property="og:type" content="website"><meta property="og:title" content="${esc(title)} · Cuenta Clara"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${esc(canonical)}">
 <link rel="icon" href="/marca.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
 ${id ? '<script type="module" src="/app.mjs"></script>' : ""}</head>
