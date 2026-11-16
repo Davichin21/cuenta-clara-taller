@@ -64,7 +64,9 @@ export_button.addEventListener("click", () => {
   const link = document.createElement("a");
   link.href = url;
   link.download = id + ".csv";
+  document.body.append(link);
   link.click();
+  link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 });
 calculate();

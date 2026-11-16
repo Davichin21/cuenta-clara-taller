@@ -14,11 +14,11 @@ nav a:hover{text-decoration:underline}
 .skip{position:absolute;top:.5rem;left:.5rem;z-index:2;padding:.6rem;background:white;transform:translateY(-150%)}
 .skip:focus{transform:none}
 .hero{background:#e9efe1;border-bottom:1px solid var(--line)}
-.hero-grid{padding-block:clamp(3.2rem,8vw,7rem);display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(2rem,7vw,7rem);align-items:center}
+.hero-grid{padding-block:clamp(3rem,6vw,5rem);display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(2rem,7vw,7rem);align-items:center}
 .eyebrow{font-size:.74rem;font-weight:820;letter-spacing:.11em;margin:0 0 1.2rem}
 h1,h2,h3{line-height:1.08;letter-spacing:-.045em;margin:0 0 .8rem}
 h1{font-size:clamp(2.2rem,6vw,4.2rem);max-width:19ch}
-.hero h1{font-size:clamp(3.2rem,8vw,6.3rem);line-height:.95}
+.hero h1{font-size:clamp(3.15rem,6.5vw,5rem);line-height:.95}
 em{font-style:normal;color:#30674c}
 h2{font-size:clamp(1.5rem,3vw,2.2rem)}
 h3{font-size:1.25rem}
