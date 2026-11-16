@@ -47,7 +47,7 @@ form.addEventListener("submit", event => {
   event.preventDefault();
   calculate();
 });
-form.addEventListener("reset", () => queueMicrotask(calculate));
+form.addEventListener("reset", () => setTimeout(calculate, 0));
 form.addEventListener("input", () => {
   csv = null;
   export_button.disabled = true;
