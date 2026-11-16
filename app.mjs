@@ -33,7 +33,7 @@ function calculate() {
     const rows = [
       ["Tipo", "Concepto", "Valor", "Unidad"],
       ...Object.entries(tool.fields).map(([key, [label]]) => ["Dato", label, values[key], label.endsWith("(%)") ? "%" : label.startsWith("Unidades") ? "unidades" : currency]),
-      ...results.map(([label, value, unit]) => ["Resultado", label, value ?? "No aplica", unit || currency])
+      ...results.map(([label, value, unit]) => ["Resultado", label, value === null ? "No aplica" : Number(value.toFixed(2)), unit || currency])
     ];
     csv = "\ufeff" + rows.map(row => row.map(value => `"${String(value).replaceAll('"', '""')}"`).join(",")).join("\r\n");
     export_button.disabled = false;
